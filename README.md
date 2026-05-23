@@ -25,7 +25,7 @@ sudo ip link set up vcan0
 ip link show vcan0
 ```
 ## 2. Estrutura do Projeto
-
+```
 📂 raiz-do-projeto/
 ├── 📄 compose.yml           # Arquivo de orquestração do Docker
 ├── 📂 ecu_motor/            # Pasta da 1ª ECU
@@ -34,7 +34,7 @@ ip link show vcan0
 └── 📂 ecu_painel/           # Pasta da 2ª ECU (e assim por diante)
     ├── 📄 Dockerfile
     └── 📄 main.c
-
+```
 ## 3. Monitoramente do Barramento CAN
 
 Para visualizar as mensagens trafegando na rede em tempo real abra um terminal dedicado e execute o comando abaixo antes de iniciar as ECUs:
