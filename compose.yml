@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  motor:
+    build: 
+      context: ./ecu_motor
+    network_mode: "host"
+    container_name: ecu_motor
+
+  painel:
+    build: 
+      context: ./ecu_painel
+    network_mode: "host"
+    container_name: ecu_painel
